@@ -20,7 +20,7 @@
   },
   "switchModelsOnFlag": true,
   "effortLevel": "medium",
-  "model": "haiku",
+  "model": "claude-fable-5[1m]",
   "hooks": {
     "PreToolUse": [
       {
