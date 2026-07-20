@@ -1,22 +1,21 @@
-# 系統生成的檔案（不應版本控制）
-.credentials.json
-.mcp.json
-mcp-needs-auth-cache.json
-.last-cleanup
+# 系統快取和暫存檔案（不應版本控制）
 cache/
+.cache/
 history.jsonl
 shell-snapshots/
 file-history/
 sessions/
-ide/
 backups/
+.last-cleanup
+
+# 系統檔案和隱私設定
+.credentials.json
+mcp-needs-auth-cache.json
+.mcp.json
+settings.local.json
 hooks/
 plugins/
-
-# 本地設定（不分享）
-settings.local.json
-
-# 系統檔案
+ide/
 .DS_Store
 .vscode/
 *.swp
@@ -24,5 +23,9 @@ settings.local.json
 *~
 .idea/
 
-# 保留項目
-# projects/ 包含記憶檔案，可根據需求選擇是否提交
+# 保留以下目錄版本控制
+# skills/        — 自訂 skills
+# agents/        — 自訂 agents
+# plans/         — 項目計劃
+# projects/      — 項目記憶（可選）
+# settings.json  — 全局設定
