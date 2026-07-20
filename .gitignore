@@ -23,9 +23,11 @@ ide/
 *~
 .idea/
 
-# 保留以下目錄版本控制
+# 項目計畫和記憶（應放在各自的專案 repository）
+plans/
+projects/
+
+# 保留版本控制的全域配置
 # skills/        — 自訂 skills
 # agents/        — 自訂 agents
-# plans/         — 項目計劃
-# projects/      — 項目記憶（可選）
 # settings.json  — 全局設定
