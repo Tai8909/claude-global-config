@@ -1,0 +1,28 @@
+# 系統生成的檔案（不應版本控制）
+.credentials.json
+.mcp.json
+mcp-needs-auth-cache.json
+.last-cleanup
+cache/
+history.jsonl
+shell-snapshots/
+file-history/
+sessions/
+ide/
+backups/
+hooks/
+plugins/
+
+# 本地設定（不分享）
+settings.local.json
+
+# 系統檔案
+.DS_Store
+.vscode/
+*.swp
+*.swo
+*~
+.idea/
+
+# 保留項目
+# projects/ 包含記憶檔案，可根據需求選擇是否提交
