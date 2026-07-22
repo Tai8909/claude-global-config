@@ -19,6 +19,7 @@
     ]
   },
   "switchModelsOnFlag": true,
+  "plansDirectory": ".claude/plans",
   "effortLevel": "medium",
   "model": "claude-fable-5[1m]",
   "hooks": {
