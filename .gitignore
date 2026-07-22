@@ -6,6 +6,8 @@ shell-snapshots/
 file-history/
 sessions/
 backups/
+downloads/
+session-env/
 .last-cleanup
 
 # 系統檔案和隱私設定
