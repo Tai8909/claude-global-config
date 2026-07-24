@@ -33,3 +33,5 @@ projects/
 # skills/        — 自訂 skills
 # agents/        — 自訂 agents
 # settings.json  — 全局設定
+
+__pycache__/
