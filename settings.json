@@ -1,97 +1,97 @@
 {
-    "enabledPlugins": {
-        "frontend-design@claude-plugins-official": true,
-        "superpowers@claude-plugins-official": true,
-        "code-review@claude-plugins-official": true,
-        "skill-creator@claude-plugins-official": true,
-        "document-skills@anthropic-agent-skills": true
-    },
-    "extraKnownMarketplaces": {
-        "anthropic-agent-skills": {
-            "source": {
-                "source": "github",
-                "repo": "anthropics/skills"
-            }
-        }
-    },
-    "autoUpdatesChannel": "latest",
-    "agentPushNotifEnabled": true,
-    "inputNeededNotifEnabled": true,
-    "permissions": {
-        "allow": [
-            "Bash(node:*)",
-            "Bash(npm test:*)",
-            "Bash(npm run test:*)",
-            "Bash(npx jest:*)",
-            "Bash(npx vitest:*)",
-            "Bash(npx mocha:*)"
-        ]
-    },
-    "switchModelsOnFlag": true,
-    "plansDirectory": ".claude/plans",
-    "effortLevel": "medium",
-    "model": "opus[1m]",
-    "hooks": {
-        "PreToolUse": [
-            {
-                "matcher": "Grep|Glob",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "~/.claude/hooks/cbm-code-discovery-gate",
-                        "timeout": 5
-                    }
-                ]
-            }
-        ],
-        "SessionStart": [
-            {
-                "matcher": "startup",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "~/.claude/hooks/cbm-session-reminder"
-                    }
-                ]
-            },
-            {
-                "matcher": "resume",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "~/.claude/hooks/cbm-session-reminder"
-                    }
-                ]
-            },
-            {
-                "matcher": "clear",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "~/.claude/hooks/cbm-session-reminder"
-                    }
-                ]
-            },
-            {
-                "matcher": "compact",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "~/.claude/hooks/cbm-session-reminder"
-                    }
-                ]
-            }
-        ],
-        "SubagentStart": [
-            {
-                "matcher": "*",
-                "hooks": [
-                    {
-                        "type": "command",
-                        "command": "~/.claude/hooks/cbm-subagent-reminder"
-                    }
-                ]
-            }
-        ]
+  "enabledPlugins": {
+    "frontend-design@claude-plugins-official": true,
+    "superpowers@claude-plugins-official": true,
+    "code-review@claude-plugins-official": true,
+    "skill-creator@claude-plugins-official": true,
+    "document-skills@anthropic-agent-skills": true
+  },
+  "extraKnownMarketplaces": {
+    "anthropic-agent-skills": {
+      "source": {
+        "source": "github",
+        "repo": "anthropics/skills"
+      }
     }
+  },
+  "autoUpdatesChannel": "latest",
+  "agentPushNotifEnabled": true,
+  "inputNeededNotifEnabled": true,
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npm test:*)",
+      "Bash(npm run test:*)",
+      "Bash(npx jest:*)",
+      "Bash(npx vitest:*)",
+      "Bash(npx mocha:*)"
+    ]
+  },
+  "switchModelsOnFlag": true,
+  "plansDirectory": ".claude/plans",
+  "effortLevel": "medium",
+  "model": "claude-fable-5[1m]",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Grep|Glob",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cbm-code-discovery-gate",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cbm-session-reminder"
+          }
+        ]
+      },
+      {
+        "matcher": "resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cbm-session-reminder"
+          }
+        ]
+      },
+      {
+        "matcher": "clear",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cbm-session-reminder"
+          }
+        ]
+      },
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cbm-session-reminder"
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/cbm-subagent-reminder"
+          }
+        ]
+      }
+    ]
+  }
 }
