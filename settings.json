@@ -18,6 +18,7 @@
   "agentPushNotifEnabled": true,
   "inputNeededNotifEnabled": true,
   "permissions": {
+    "defaultMode": "auto",
     "allow": [
       "Bash(node:*)",
       "Bash(npm test:*)",
