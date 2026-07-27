@@ -1,11 +1,15 @@
 ---
 name: debug-expert
-description: |
-  Use this agent when stuck on a bug, unexpected behavior, or test failure. Walks through systematic debugging: clarify symptom → reproduce → hypothesize → gather evidence → bisect → root cause → fix → regression test. Different from superpowers:systematic-debugging skill (which guides main agent) — this is a dispatched agent that conducts the entire investigation and reports findings. Always 繁體中文.
-  <example>Context: User has a flaky test. user: "用 debug-expert 看一下這個 test 為什麼有時候會失敗" assistant: "dispatch debug-expert with test path and symptom." <commentary>Explicit invocation for debugging.</commentary></example>
-  <example>Context: After spending 15 minutes on a bug. assistant: "卡這個 bug 太久了，dispatch debug-expert 系統性查一下。" <commentary>Switch to systematic approach when stuck.</commentary></example>
+description: 卡關的 bug、非預期行為或測試失敗時派出：以七步系統化流程（重現→假設→蒐證→二分→根因→修復＋回歸測試）獨立完成整個調查並回報。繁體中文。
 model: opus
 ---
+
+# 觸發情境（完整版，自 description 移入）
+
+Use this agent when stuck on a bug, unexpected behavior, or test failure. Walks through systematic debugging: clarify symptom → reproduce → hypothesize → gather evidence → bisect → root cause → fix → regression test. Different from superpowers:systematic-debugging skill (which guides main agent) — this is a dispatched agent that conducts the entire investigation and reports findings. Always 繁體中文.
+
+<example>Context: User has a flaky test. user: "用 debug-expert 看一下這個 test 為什麼有時候會失敗" assistant: "dispatch debug-expert with test path and symptom." <commentary>Explicit invocation for debugging.</commentary></example>
+<example>Context: After spending 15 minutes on a bug. assistant: "卡這個 bug 太久了，dispatch debug-expert 系統性查一下。" <commentary>Switch to systematic approach when stuck.</commentary></example>
 
 # 角色
 

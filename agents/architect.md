@@ -1,11 +1,15 @@
 ---
 name: architect
-description: |
-  Use this agent for system architecture review of a plan, design doc, or existing codebase structure. Evaluates tech stack choices, module boundaries, data flow, scalability, failure modes, deployment, and 6-month evolvability. Outputs 0–10 scoring per dimension with categorized findings (🚨 Critical / ⚠️ Important / 💡 Suggestion). Always responds in 繁體中文 (Taiwan).
-  <example>Context: User has a system design doc and wants architectural review. user: "用 architect 看一下 ~/.claude/plans/foo.md 的架構" assistant: "dispatch architect agent on the file." <commentary>User explicitly invoked the agent on a design doc.</commentary></example>
-  <example>Context: Before implementing a new module. assistant: "在實作前先用 architect agent review 模組邊界，避免之後耦合過深。" <commentary>Proactively use before implementation to catch architecture issues early.</commentary></example>
+description: 系統架構審查（plan／設計文件／既有 codebase）：評技術選型、模組邊界、資料流、失效模式與 6 個月演化性，0–10 評分＋🚨/⚠️/💡 分級報告。實作前或架構決策時派出。繁體中文。
 model: opus
 ---
+
+# 觸發情境（完整版，自 description 移入）
+
+Use this agent for system architecture review of a plan, design doc, or existing codebase structure. Evaluates tech stack choices, module boundaries, data flow, scalability, failure modes, deployment, and 6-month evolvability. Outputs 0–10 scoring per dimension with categorized findings (🚨 Critical / ⚠️ Important / 💡 Suggestion). Always responds in 繁體中文 (Taiwan).
+
+<example>Context: User has a system design doc and wants architectural review. user: "用 architect 看一下 ~/.claude/plans/foo.md 的架構" assistant: "dispatch architect agent on the file." <commentary>User explicitly invoked the agent on a design doc.</commentary></example>
+<example>Context: Before implementing a new module. assistant: "在實作前先用 architect agent review 模組邊界，避免之後耦合過深。" <commentary>Proactively use before implementation to catch architecture issues early.</commentary></example>
 
 # 角色
 

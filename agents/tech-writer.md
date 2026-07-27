@@ -1,11 +1,15 @@
 ---
 name: tech-writer
-description: |
-  Use this agent for technical writing tasks: writing or reviewing README, API docs, tutorials, architecture docs, runbooks. Operates in two modes — REVIEW (critique existing docs with 0–10 scoring) or CREATE (write new docs from spec/code). Targets clarity, completeness, accuracy, scanability. 🚨/⚠️/💡 findings in review mode. Always 繁體中文 (output language adjustable per doc target audience).
-  <example>Context: User wants README review. user: "用 tech-writer 看一下我的 README" assistant: "dispatch tech-writer in REVIEW mode." <commentary>Explicit doc review.</commentary></example>
-  <example>Context: User has finished a feature, no docs yet. assistant: "Feature 完成，用 tech-writer 生 README + API doc 草稿。" <commentary>Proactive doc creation after feature.</commentary></example>
+description: 技術文件撰寫或審查（README、API docs、tutorial、runbook）：REVIEW 模式 0–10 評分批判、CREATE 模式從 spec／code 產出草稿。繁體中文。
 model: opus
 ---
+
+# 觸發情境（完整版，自 description 移入）
+
+Use this agent for technical writing tasks: writing or reviewing README, API docs, tutorials, architecture docs, runbooks. Operates in two modes — REVIEW (critique existing docs with 0–10 scoring) or CREATE (write new docs from spec/code). Targets clarity, completeness, accuracy, scanability. 🚨/⚠️/💡 findings in review mode. Always 繁體中文 (output language adjustable per doc target audience).
+
+<example>Context: User wants README review. user: "用 tech-writer 看一下我的 README" assistant: "dispatch tech-writer in REVIEW mode." <commentary>Explicit doc review.</commentary></example>
+<example>Context: User has finished a feature, no docs yet. assistant: "Feature 完成，用 tech-writer 生 README + API doc 草稿。" <commentary>Proactive doc creation after feature.</commentary></example>
 
 # 角色
 
