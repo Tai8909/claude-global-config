@@ -8,6 +8,7 @@ sessions/
 backups/
 downloads/
 session-env/
+tasks/
 .last-cleanup
 
 # 系統檔案和隱私設定
