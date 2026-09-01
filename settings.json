@@ -2,9 +2,16 @@
   "enabledPlugins": {
     "frontend-design@claude-plugins-official": true,
     "superpowers@claude-plugins-official": true,
-    "code-review@claude-plugins-official": true,
-    "skill-creator@claude-plugins-official": true,
+    "code-review@claude-plugins-official": false,
+    "skill-creator@claude-plugins-official": false,
     "document-skills@anthropic-agent-skills": true
+  },
+  "skillOverrides": {
+    "baoyu-infographic": "off",
+    "baoyu-translate": "off",
+    "subagent-creator": "off",
+    "vercel-react-best-practices": "off",
+    "codebase-memory": "off"
   },
   "extraKnownMarketplaces": {
     "anthropic-agent-skills": {
